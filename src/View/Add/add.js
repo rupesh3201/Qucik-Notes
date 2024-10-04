@@ -1,9 +1,9 @@
 import React from 'react'
 import './add.css'
-function add() {
+function Add() {
   return (
     <div>add</div>
   )
 }
 
-export default add
+export default Add

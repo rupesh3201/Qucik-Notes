@@ -1,9 +1,9 @@
 import React from 'react'
 import './show.css'
-function show() {
+function Show() {
   return (
     <div>show</div>
   )
 }
 
-export default show
+export default Show

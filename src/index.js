@@ -1,24 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createBroswerRouter, RouterProvider} from 'react-router-dom'
-import home from './View/Home/home';
+import Home from './View/Home/home';
+import Add from './View/Add/add'
+import Show from './View/Show/show'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBroswerRouter([
     {
         path: "/",
-        element: <home/>
+        element: <Home/>
     },
     {
         path: "/add",
-        element: <add/>
+        element: <Add/>
     },
     {
         path: "/show",
-        element: <home/>
+        element: <Show/>
     }
 ])
 root.render(
