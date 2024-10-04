@@ -22,7 +22,7 @@ const router = createBroswerRouter([
     }
 ])
 root.render(
-    <App />
+    <RouterProvider router={router}/>
 );
 
 // If you want to start measuring performance in your app, pass a function
