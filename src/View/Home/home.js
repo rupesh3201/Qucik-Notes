@@ -8,8 +8,8 @@ function Home() {
       <h4 className='Heading'>“ Start where you are. Use what you have. Do what you can🥷🏻” </h4>
     </div>
     <div className='Button_container'>
-      < button className='action_btn' >Add Notes</button>
-      < button className='action_btn' >Views Notes</button>
+      < button className='action_btn' >Add Notes ✍️</button>
+      < button className='action_btn' >Views Notes📄</button>
 
       
 
