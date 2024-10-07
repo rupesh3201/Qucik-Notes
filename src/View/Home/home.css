@@ -5,5 +5,11 @@
 }
 .Heading span{
     color:#078080 ;
-
+}
+.action_btn
+{
+    color: white;
+    background-color: #078080;
+    border: none;
+    border-radius: 5px;
 }
