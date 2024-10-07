@@ -42,7 +42,8 @@
     /* border: 1px solid #f45d48; */
 }
 .action_btn:hover{
-    box-shadow: 0px 0px 5px 1px gray;
+    background-color: #036666;  
+    cursor: pointer;
     transition: 1ms ease-in;
 }
 .Feaures_container
@@ -50,8 +51,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     gap: 30px;
+    margin: 60px ;
 }
 .Features_card
 {
@@ -61,13 +62,17 @@
     flex-direction: column;
     border-radius: 15px;
     /* border:1px solid black; */
-    box-shadow: 0px 0px 5px 0px gray;
+    /* box-shadow: 0px 0px 5px 0px gray; */
     height:180px;
     width: 300px;
     background-color:white;
+    box-shadow: 0px 0px 5px 0px gray;
+    transition: 1ms ease-in;
 }
 .Features_card:hover{
-    /* border: 1px solid #f45d48; */
+    box-shadow: 0px 0px 5px 1px #222525;
+    transition: 1ms ease-in;
+   
 
 }
 .Features_Logo
@@ -83,5 +88,5 @@
     text-align: justify;
     font-size: 20px;
     color: #232323;
-    font-weight: 500;
+    font-weight: 700;
 }
