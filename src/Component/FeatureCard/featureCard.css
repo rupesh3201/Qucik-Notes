@@ -1,0 +1,16 @@
+
+.Features_Logo
+{
+    height: 80px;
+    width:80px ;
+    margin: 15px 5px;
+   border-radius:5px ;
+}
+.Features_Dispt
+{
+    margin: 5px 15px;
+    text-align: justify;
+    font-size: 20px;
+    color: #232323;
+    font-weight: 700;
+}
