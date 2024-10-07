@@ -13,6 +13,11 @@
     align-items: center;
     gap: 30px;
 }
+.whyquciknotes{
+    text-align: center;
+  
+
+}
 .action_btn
 {
     color: white;
@@ -27,6 +32,4 @@
 .action_btn:hover{
     box-shadow: 0px 0px 5px 1px gray;
     transition: 1ms ease-in;
-
-    
 }
