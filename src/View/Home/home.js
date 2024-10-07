@@ -3,6 +3,7 @@ import './home.css'
 import shield from '../../Assets/shield (1).png'
 import easy from '../../Assets/easy.png'
 import Stress from '../../Assets/stress.png'
+import FeatureCard from '../../Component/FeatureCard/featureCard'
 function Home() {
   return (
     <div>
@@ -13,19 +14,9 @@ function Home() {
     <div>
       <h3 className='whyquciknotes'> Why Quick Notes ? </h3>
       <div className='Feaures_container'>
-      <div className='Features_card'>
-        <img src={shield} className='Features_Logo'></img>
-        <p className='Features_Dispt'>notes will be securely stored in browser local storage </p>
-      </div>
-      <div className='Features_card'>
-        <img src={easy} className='Features_Logo'></img>
-        <p className='Features_Dispt'>easy to use, life-time access </p>
-      </div>
-      <div className='Features_card'>
-        <img src={Stress} className='Features_Logo'></img>
-        <p className='Features_Dispt'>use your brain to think, not to remember </p>
-      </div>
-     
+        <FeatureCard featureImg={shield} featureDisc="notes will be securely stored in browser local storage "/>
+        <FeatureCard  featureImg={easy} featureDisc="easy to use, life-time access "/>
+        <FeatureCard featureImg={Stress} featureDisc="use your brain to think, not to remember  "/>
       </div>
     </div>
     <div className='Button_container'>
