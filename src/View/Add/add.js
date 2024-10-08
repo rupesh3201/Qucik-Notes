@@ -3,7 +3,7 @@ import './add.css'
 import HomeBtn from './../../Component/Home/HomeBtn'
 
 function Add() {
-  const [Title , setTitle] = useState("Rupesh")
+  const [Title , setTitle] = useState("")
   return (
     <div>
     <div>
@@ -14,10 +14,14 @@ function Add() {
     type='text '
     placeholder='Title'
     value={Title}
-    onChange={()=>{
-      console.log("Title Changed")
+    onChange={(e)=>{
+      console.log(e.target.value)
+      setTitle(e.target.value)
+      
     }}
     />
+    <button type='button' onClick={()=>{setTitle("");}} >Clear</button>
+    title is {Title}
    <HomeBtn/>
     </div>
   )
