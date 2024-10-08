@@ -4,6 +4,22 @@ import shield from '../../Assets/shield (1).png'
 import easy from '../../Assets/easy.png'
 import Stress from '../../Assets/stress.png'
 import FeatureCard from '../../Component/FeatureCard/featureCard'
+const Features = [
+  {
+    featureImg:shield,
+    featureDisc:"notes will be securely stored in browser local storage "
+
+  }, 
+  {
+    featureImg:easy,
+    featureDisc:"easy to use, life-time access "
+
+
+  },
+  {
+
+  }
+]
 function Home() {
   return (
     <div>
@@ -14,8 +30,8 @@ function Home() {
     <div>
       <h3 className='whyquciknotes'> Why Quick Notes ? </h3>
       <div className='Feaures_container'>
-        <FeatureCard featureImg={shield} featureDisc="notes will be securely stored in browser local storage "/>
-        <FeatureCard  featureImg={easy} featureDisc="easy to use, life-time access "/>
+        <FeatureCard />
+        <FeatureCard/>
         <FeatureCard featureImg={Stress} featureDisc="use your brain to think, not to remember  "/>
       </div>
     </div>
