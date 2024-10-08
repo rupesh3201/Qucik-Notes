@@ -91,3 +91,84 @@
     color: #232323;
     font-weight: 700;
 }
+@media screen and (max-width:500px) {
+    .Heading
+    {
+       
+        margin-top: -5px;
+        font-size: 30px;
+    }
+    .SubHeading
+{
+   font-size: 14px;
+}
+.SubHeading span
+{
+    color:#078080 ;
+
+}
+.Heading span{
+    color:#078080 ;
+}
+.Button_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.whyquciknotes{
+    text-align: center;
+    color: #232323;
+  
+
+}
+.action_btn
+{
+    color: #f8f5f2;
+    background-color: #078080;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    height: 45px;
+    width: 150px;
+    /* border: 1px solid #f45d48; */
+}
+.action_btn:hover{
+    background-color: #036666;  
+    cursor: pointer;
+    transition: 1ms ease-in;
+}
+.Feaures_container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin: 20px ;
+    flex-wrap: wrap;
+}
+.Features_card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    /* border:1px solid black; */
+    /* box-shadow: 0px 0px 5px 0px gray; */
+    height:150px;
+    width: 250px;
+    background-color:white;
+    box-shadow: 0px 0px 5px 0px gray;
+    transition: 1ms ease-in;
+}
+.Features_card:hover{
+    box-shadow: 0px 0px 5px 1px #222525;
+    transition: 1ms ease-in;
+   
+
+}
+    
+}
