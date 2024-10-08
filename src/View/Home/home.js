@@ -4,6 +4,8 @@ import shield from '../../Assets/shield (1).png'
 import easy from '../../Assets/easy.png'
 import Stress from '../../Assets/stress.png'
 import FeatureCard from '../../Component/FeatureCard/featureCard'
+import { Link } from 'react-router-dom'
+
 const Features = [
   {
     featureImg:shield,
@@ -40,14 +42,16 @@ function Home() {
            featureImg={featureImg}
     featureDisc={featureDisc}/>)
         })
-      }
-       
-        <FeatureCard />
+}
       </div>
     </div>
     <div className='Button_container'>
+      <Link to={"/add"}>
       < button className='action_btn' > Add Notes ✏️ </button>
+      </Link>
+      <Link to={"/show"}>
       < button className='action_btn' > Views Notes📄</button>
+      </Link>
     </div>
     </div>
  

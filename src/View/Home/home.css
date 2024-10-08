@@ -53,6 +53,7 @@
     align-items: center;
     gap: 30px;
     margin: 60px ;
+    flex-wrap: wrap;
 }
 .Features_card
 {
