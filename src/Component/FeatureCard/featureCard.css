@@ -14,3 +14,21 @@
     color: #232323;
     font-weight: 700;
 }
+@media screen and (max-width:500px) {
+    .Features_Logo
+{
+    height: 50px;
+    width:50px ;
+    margin: 15px 5px;
+   border-radius:5px ;
+}
+.Features_Dispt
+{
+    margin: 5px 10px;
+    text-align: justify;
+    font-size: 16px;
+    color: #232323;
+    font-weight: 600;
+}
+
+}
