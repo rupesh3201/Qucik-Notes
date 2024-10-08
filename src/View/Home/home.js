@@ -17,6 +17,8 @@ const Features = [
 
   },
   {
+    featureImg:Stress,
+    featureDisc:"use your brain to think, not to remember  "
 
   }
 ]
@@ -30,9 +32,17 @@ function Home() {
     <div>
       <h3 className='whyquciknotes'> Why Quick Notes ? </h3>
       <div className='Feaures_container'>
+      {
+        Features.map((feature)=>{
+          const {featureImg , featureDisc} = feature
+          return(  <FeatureCard 
+          
+           featureImg={featureImg}
+    featureDisc={featureDisc}/>)
+        })
+      }
+       
         <FeatureCard />
-        <FeatureCard/>
-        <FeatureCard featureImg={Stress} featureDisc="use your brain to think, not to remember  "/>
       </div>
     </div>
     <div className='Button_container'>
