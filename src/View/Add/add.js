@@ -23,7 +23,6 @@ function Add() {
       
     }}
     />
-    <button type='button' onClick={()=>{setDiscription("");}} >Clear</button>
     <input 
     type='text '
     placeholder='Discription'
@@ -35,15 +34,14 @@ function Add() {
     }}
     />
 
-    <select value={Categary } onClick={(e)=>{setCategary(e.target.value);}}>
+    <select value={Categary } onChange={(e)=>{setCategary(e.target.value);}}>
       <option value='shopping'>Shopping</option>
       <option value='work'>Work</option>
       <option value='personal'>Personal</option>
-      <option value='Study'>Study</option>
-      <option></option>
-      <option></option>
+      <option value='study'>Study</option>
+      <option value='travel'>Travel</option>
     </select>
-    <button type='button' onClick={()=>{setEmoji("");}} >Clear</button>
+
     <input 
     type='text '
     placeholder='Emoji'
@@ -54,7 +52,6 @@ function Add() {
       
     }}
     />
-    <button type='button' onClick={()=>{setTitle("");}} >Clear</button>
     
    <HomeBtn/>
     </div>
