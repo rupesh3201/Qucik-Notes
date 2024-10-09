@@ -4,6 +4,8 @@ import HomeBtn from './../../Component/Home/HomeBtn'
 
 function Add() {
   const [Title , setTitle] = useState("")
+  const [Discription , setDiscription ] = useState("")
+  const [Categary , setCategary ] = useState("")
   return (
     <div>
     <div>
@@ -21,7 +23,7 @@ function Add() {
     }}
     />
     <button type='button' onClick={()=>{setTitle("");}} >Clear</button>
-    title is {Title}
+    {/* title is {Title} */}
    <HomeBtn/>
     </div>
   )
