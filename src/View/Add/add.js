@@ -46,6 +46,17 @@ function Add() {
       
     }}
     />
+    <button type='button' onClick={()=>{setEmoji("");}} >Clear</button>
+    <input 
+    type='text '
+    placeholder='Emoji'
+    value={Emoji}
+    onChange={(e)=>{
+      console.log(e.target.value)
+      setTitle(e.target.value)
+      
+    }}
+    />
     <button type='button' onClick={()=>{setTitle("");}} >Clear</button>
     
    <HomeBtn/>
