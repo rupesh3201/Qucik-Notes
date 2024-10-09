@@ -35,17 +35,9 @@ function Add() {
     }}
     />
     <button type='button' onClick={()=>{setCategary("");}} >Clear</button>
-    
-    <input 
-    type='text '
-    placeholder='Categary'
-    value={Categary}
-    onChange={(e)=>{
-      console.log(e.target.value)
-      setTitle(e.target.value)
-      
-    }}
-    />
+    <select>
+      <option></option>
+    </select>
     <button type='button' onClick={()=>{setEmoji("");}} >Clear</button>
     <input 
     type='text '
