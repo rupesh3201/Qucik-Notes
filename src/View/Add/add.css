@@ -16,3 +16,54 @@
 .Heading span{
     color:#078080 ;
 }
+.Inputcontainer
+{
+    margin: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.userinput{
+    width: 400px;
+    height: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border:1px solid gray;
+    padding: 10px 20px;
+
+    font-size: 16px;
+}
+.deopdown
+{
+    width: 450px;
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    color: black;
+    border:1px solid gray;
+    padding: 10px 20px;
+   
+    font-size: 16px;
+}
+.ActionBtn
+{
+    width: 450px;
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    color: grey;
+    border:1px solid gray;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.userinputemoji
+{
+    
+    font-size:20px;
+  
+}
+

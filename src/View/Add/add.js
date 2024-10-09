@@ -16,6 +16,7 @@ function Add() {
       <h1 className='Heading'> <span></span>Add <span></span>Notes ✏️ </h1>
       {/* <h4 className='SubHeading'>“ Start where<span>  you </span>are. Use what <span> you  </span> have.  Do what<span>  you  </span>can🥷🏻” </h4> */}
     </div>
+    <div className='Inputcontainer'>
     <input 
     type='text '
     placeholder='Title'
@@ -25,6 +26,7 @@ function Add() {
       setTitle(e.target.value)
       
     }}
+    className="userinput"
     />
     <input 
     type='text '
@@ -32,30 +34,33 @@ function Add() {
     value={Discription}
     onChange={(e)=>{
       console.log(e.target.value)
-      setTitle(e.target.value)
+      setDiscription(e.target.value)
       
     }}
+     className="userinput"
     />
+  
 
-    <select value={Categary } onChange={(e)=>{setCategary(e.target.value);}}>
+    <select value={Categary } onChange={(e)=>{setCategary(e.target.value);}} className='deopdown' >
       <option value='shopping'>Shopping</option>
       <option value='work'>Work</option>
       <option value='personal'>Personal</option>
       <option value='study'>Study</option>
       <option value='travel'>Travel</option>
+     
     </select>
-
-    {Emoji}
-    <button type='button' onClick={()=>SetOpenEmoji(true)}> Select Emoji</button>
-   
-  <EmojiPicker 
+    <EmojiPicker  
+  className='EmojiPicker'
   open={OpenEmoji}
   onEmojiClick={(emojiObj)=>{setEmoji(emojiObj.emoji)
     SetOpenEmoji(false)
   }}
    />
+    <button type='button' onClick={()=>SetOpenEmoji(true)} className='ActionBtn userinputemoji'   >  {Emoji ? Emoji :'Select Emoji' } </button>
    
-    
+
+</div>
+   <button></button>
    <HomeBtn/>
     </div>
   )
