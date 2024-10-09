@@ -6,6 +6,7 @@ function Add() {
   const [Title , setTitle] = useState("")
   const [Discription , setDiscription ] = useState("")
   const [Categary , setCategary ] = useState("")
+  const [Emoji, setEmoji] = useState("")
   return (
     <div>
     <div>
@@ -22,8 +23,19 @@ function Add() {
       
     }}
     />
+    <button type='button' onClick={()=>{setDiscription("");}} >Clear</button>
+    <input 
+    type='text '
+    placeholder='Discription'
+    value={Discription}
+    onChange={(e)=>{
+      console.log(e.target.value)
+      setTitle(e.target.value)
+      
+    }}
+    />
     <button type='button' onClick={()=>{setTitle("");}} >Clear</button>
-    {/* title is {Title} */}
+    
    <HomeBtn/>
     </div>
   )
