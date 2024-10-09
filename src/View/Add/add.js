@@ -8,6 +8,7 @@ function Add() {
   const [Discription , setDiscription ] = useState("")
   const [Categary , setCategary ] = useState("")
   const [Emoji, setEmoji] = useState("")
+  const [OpenEmoji , SetOpenEmoji] = useState(false)
   return (
     <div>
     <div>
@@ -53,8 +54,12 @@ function Add() {
       
     }}
     />
+    <button type='button' onClick={()=>SetOpenEmoji(true)}> Select Emoji</button>
    
-  <EmojiPicker />
+  <EmojiPicker 
+  open={OpenEmoji}
+  onEmojiClick={(emojiObj)=>{console.log(emojiObj)}}
+   />
    
     
    <HomeBtn/>
