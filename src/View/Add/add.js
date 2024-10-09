@@ -34,8 +34,13 @@ function Add() {
       
     }}
     />
-    <button type='button' onClick={()=>{setCategary("");}} >Clear</button>
-    <select>
+
+    <select value={Categary } onClick={(e)=>{setCategary(e.target.value);}}>
+      <option value='shopping'>Shopping</option>
+      <option value='work'>Work</option>
+      <option value='personal'>Personal</option>
+      <option value='Study'>Study</option>
+      <option></option>
       <option></option>
     </select>
     <button type='button' onClick={()=>{setEmoji("");}} >Clear</button>
