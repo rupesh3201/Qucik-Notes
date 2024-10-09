@@ -60,7 +60,12 @@ function Add() {
    
 
 </div>
-   <button></button>
+   <button type='button' onClick={()=>{
+    console.log("title:",Title)
+    console.log("Dispt:",Discription)
+    console.log("Categary:",Categary)
+    console.log("Emoji:",Emoji)
+    }}></button>
    <HomeBtn/>
     </div>
   )
