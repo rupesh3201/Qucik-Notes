@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './add.css'
 import HomeBtn from './../../Component/Home/HomeBtn'
 import EmojiPicker from 'emoji-picker-react';
+import { isDisabled } from '@testing-library/user-event/dist/utils';
 
 function Add() {
   const [Title , setTitle] = useState("")
@@ -44,21 +45,14 @@ function Add() {
       <option value='travel'>Travel</option>
     </select>
 
-    <input 
-    type='text '
-    placeholder='Emoji'
-    value={Emoji}
-    onChange={(e)=>{
-      console.log(e.target.value)
-      setTitle(e.target.value)
-      
-    }}
-    />
+    {Emoji}
     <button type='button' onClick={()=>SetOpenEmoji(true)}> Select Emoji</button>
    
   <EmojiPicker 
   open={OpenEmoji}
-  onEmojiClick={(emojiObj)=>{console.log(emojiObj)}}
+  onEmojiClick={(emojiObj)=>{setEmoji(emojiObj.emoji)
+    SetOpenEmoji(false)
+  }}
    />
    
     
