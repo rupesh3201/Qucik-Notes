@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './add.css'
 import HomeBtn from './../../Component/Home/HomeBtn'
+import EmojiPicker from 'emoji-picker-react';
 
 function Add() {
   const [Title , setTitle] = useState("")
@@ -52,6 +53,9 @@ function Add() {
       
     }}
     />
+   
+  <EmojiPicker />
+   
     
    <HomeBtn/>
     </div>
