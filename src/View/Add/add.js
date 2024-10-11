@@ -59,14 +59,17 @@ function Add() {
     <button type='button' onClick={()=>SetOpenEmoji(true)} className='ActionBtn userinputemoji'   >  {Emoji ? Emoji :'Select Emoji' } </button>
    
 
-</div>
+
    <button type='button' onClick={()=>{
     console.log("title:",Title)
     console.log("Dispt:",Discription)
     console.log("Categary:",Categary)
     console.log("Emoji:",Emoji)
-    }}></button>
+    }}
+    className='ActionBtn1'> Add Note </button>
+    </div>
    <HomeBtn/>
+   {/* 1 */}
     </div>
   )
 }
