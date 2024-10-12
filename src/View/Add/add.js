@@ -69,7 +69,7 @@ function Add() {
     className='ActionBtn1'> Add Note </button>
     </div>
    <HomeBtn/>
-   {/*4
+   {/*3
    */}
     </div>
   )
