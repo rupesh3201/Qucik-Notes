@@ -10,6 +10,16 @@ function Add() {
   const [Categary , setCategary ] = useState("")
   const [Emoji, setEmoji] = useState("")
   const [OpenEmoji , SetOpenEmoji] = useState(false)
+const Addnote =()=>
+{
+  const Notes = JSON.parse(localStorage.getItem("notes")) ||[];
+  const notesobj = {
+    Title : Title , 
+    Discription: Discription,
+    Categary: Categary,
+    Emoji :Emoji
+  }
+};
   return (
     <div>
     <div>
@@ -60,12 +70,8 @@ function Add() {
    
 
 
-   <button type='button' onClick={()=>{
-    console.log("title:",Title)
-    console.log("Dispt:",Discription)
-    console.log("Categary:",Categary)
-    console.log("Emoji:",Emoji)
-    }}
+   <button type='button' onClick={Addnote}
+    
     className='ActionBtn1'> Add Note </button>
     </div>
    <HomeBtn/>
