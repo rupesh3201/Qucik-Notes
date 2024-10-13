@@ -26,6 +26,7 @@ const Addnote =()=>
   setTitle("");
   setDiscription("");
   setCategary("");
+  SetOpenEmoji("");
 
 };
   return (
