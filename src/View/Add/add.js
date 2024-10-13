@@ -69,6 +69,7 @@ const Addnote =()=>
     SetOpenEmoji(false)
   }}
    />
+   <Toaster/>
     <button type='button' onClick={()=>SetOpenEmoji(true)} className='ActionBtn userinputemoji'   >  {Emoji ? Emoji :'Select Emoji' } </button>
    
 
