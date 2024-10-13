@@ -61,6 +61,7 @@ const Addnote =()=>
   
 
     <select value={Categary } onChange={(e)=>{setCategary(e.target.value);}} className='deopdown' >
+    <option value=''>Select Categary</option>
       <option value='shopping'>Shopping</option>
       <option value='work'>Work</option>
       <option value='personal'>Personal</option>
