@@ -19,6 +19,7 @@ const Addnote =()=>
     Categary: Categary,
     Emoji :Emoji
   }
+  Notes.push(notesobj)
 };
   return (
     <div>
