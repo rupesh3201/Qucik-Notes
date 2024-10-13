@@ -20,6 +20,7 @@ const Addnote =()=>
     Emoji :Emoji
   }
   Notes.push(notesobj)
+  localStorage.setItem ("Notes", JSON.stringify(notesobj));
 };
   return (
     <div>
