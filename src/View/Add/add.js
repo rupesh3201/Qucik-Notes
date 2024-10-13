@@ -3,7 +3,7 @@ import './add.css'
 import HomeBtn from './../../Component/Home/HomeBtn'
 import EmojiPicker from 'emoji-picker-react';
 import { isDisabled } from '@testing-library/user-event/dist/utils';
-import { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 
 function Add() {
   const [Title , setTitle] = useState("")
@@ -22,6 +22,7 @@ const Addnote =()=>
   }
   Notes.push(notesobj)
   localStorage.setItem ("Notes", JSON.stringify(notesobj));
+  toast.success("Note Added Sucessfully")
 };
   return (
     <div>
