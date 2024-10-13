@@ -61,12 +61,12 @@ const Addnote =()=>
   
 
     <select value={Categary } onChange={(e)=>{setCategary(e.target.value);}} className='deopdown' >
-    <option value=''>Select Categary</option>
-      <option value='shopping'>Shopping</option>
-      <option value='work'>Work</option>
-      <option value='personal'>Personal</option>
-      <option value='study'>Study</option>
-      <option value='travel'>Travel</option>
+    <option className='Dropdown' value=''>Select Categary</option>
+      <option  className='Dropdown' value='shopping'>Shopping</option>
+      <option  className='Dropdown' value='work'>Work</option>
+      <option  className='Dropdown' value='personal'>Personal</option>
+      <option  className='Dropdown' value='study'>Study</option>
+      <option  className='Dropdown' value='travel'>Travel</option>
      
     </select>
     <EmojiPicker  
