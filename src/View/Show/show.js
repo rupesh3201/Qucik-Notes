@@ -4,6 +4,8 @@ import HomeBtn from './../../Component/Home/HomeBtn'
 function Show() {
   const [Notes,setNotes] = useState([])
   useEffect(()=>{
+    const SavedNotes= JSON.parse(localStorage.getItem("notes")) ||[];
+    console.log(SavedNotes)
 
   },[])
   return (
