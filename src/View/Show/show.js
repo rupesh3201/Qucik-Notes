@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './show.css'
 import HomeBtn from './../../Component/Home/HomeBtn'
 function Show() {
   const [Notes,setNotes] = useState([])
+  useEffect(()=>{
+
+  },[])
   return (
     <div>
       <div>
