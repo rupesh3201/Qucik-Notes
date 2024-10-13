@@ -24,7 +24,9 @@ const Addnote =()=>
   localStorage.setItem ("Notes", JSON.stringify(notesobj));
   toast.success("Note Added Sucessfully !");
   setTitle("");
-  setDiscription("")
+  setDiscription("");
+  setCategary("");
+
 };
   return (
     <div>
