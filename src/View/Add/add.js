@@ -22,7 +22,8 @@ const Addnote =()=>
   }
   Notes.push(notesobj)
   localStorage.setItem ("Notes", JSON.stringify(notesobj));
-  toast.success("Note Added Sucessfully")
+  toast.success("Note Added Sucessfully !");
+  setTitle("");
 };
   return (
     <div>
