@@ -3,6 +3,7 @@ import './add.css'
 import HomeBtn from './../../Component/Home/HomeBtn'
 import EmojiPicker from 'emoji-picker-react';
 import { isDisabled } from '@testing-library/user-event/dist/utils';
+import { Toaster } from 'react-hot-toast';
 
 function Add() {
   const [Title , setTitle] = useState("")
