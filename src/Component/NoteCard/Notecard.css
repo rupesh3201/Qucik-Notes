@@ -21,6 +21,10 @@
 .Notecard_emoji
 {
     margin-right: 45px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 2px 1px gray;
+
 
 }
 .NotecardDis{
@@ -33,9 +37,7 @@
     margin: 0px;
     padding: 3px;
     font-weight:600;
-    font-family:'Times New Roman', Times, serif
-
-
+    font-family:'Times New Roman', Times, serif;
 }
 .NotecardCatrgory
 {
