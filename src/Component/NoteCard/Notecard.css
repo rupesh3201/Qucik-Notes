@@ -18,7 +18,14 @@
     justify-content: center;
 
 }
+.Notecard_emoji
+{
+    margin-right: 30px;
 
+}
+.NotecardDis{
+
+}
 
 .Notecard:hover
 {
