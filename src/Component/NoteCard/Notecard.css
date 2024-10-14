@@ -20,18 +20,34 @@
 }
 .Notecard_emoji
 {
-    margin-right: 30px;
+    margin-right: 45px;
 
 }
 .NotecardDis{
+    margin: 0px;
+    padding: 2px;
 
 }
+.Notecardtitle
+{
+    margin: 0px;
+    padding: 3px;
+    font-weight:600;
+    font-family:'Times New Roman', Times, serif
 
-.Notecard:hover
-{
-    /* border: 1px solid rgb(213, 156, 42); */
+
 }
-.Notecard_emoji
+.NotecardCatrgory
 {
-    font-size: 45px;
+    margin: 0px;
+    font-size: 25px;
+    padding: 2px;
+    font-weight:400;
+
+}
+.notcardDiscription
+{
+    margin: 0px;
+    font-weight:400;
+    padding: 2px;
 }

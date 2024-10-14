@@ -7,9 +7,10 @@ function Notecard({ Title, Description, Category, Emoji }) {  // Changed Discrip
       <div className='Notecard'>
         <h1 className='Notecard_emoji'>{Emoji}</h1>
         <div className='NotecardDis'>
-          <h1>{Title}</h1>
-          <p>{Category}</p>
-          <p>{Description}</p> {/* Fixed the prop name */}
+          <h2 className='Notecardtitle'>{Title}</h2>
+          <p className='notcardDiscription'>{Description}</p>
+          <p className='NotecardCatrgory'>{Category}</p>
+          
         </div>
       </div>
     </div>
