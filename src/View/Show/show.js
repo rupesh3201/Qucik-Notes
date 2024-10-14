@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './show.css';
 import HomeBtn from './../../Component/Home/HomeBtn';
+import Notecard from '../../Component/NoteCard/Notecard';
 
 function Show() {
   const [Notes, setNotes] = useState([]);
@@ -20,11 +21,15 @@ function Show() {
           Notes.map((note, index) => {
             const { Title, Description, Category, Emoji } = note;
             return (
-              <div key={index} className="noteCard">
-                <h3>{Emoji} {Title}</h3>
-                <p>{Description}</p>
-                <span className='noteCategory'>{Category}</span>
-              </div>
+              <Notecard 
+              Title={Title} Description={Description} Category= {Category} Emoji= {Emoji}
+
+              />
+              // <div key={index} className="noteCard">
+              //   <h3>{Emoji} {Title}</h3>
+              //   <p>{Description}</p>
+              //   <span className='noteCategory'>{Category}</span>
+              // </div>
             );
           })
         )}
