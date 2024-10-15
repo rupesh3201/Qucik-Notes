@@ -56,8 +56,8 @@ function Add() {
           <option className='Dropdown' value='personal'>Personal</option>
           <option className='Dropdown' value='study'>Study</option>
           <option className='Dropdown' value='travel'>Travel</option>
-          <option className='Dropdown' value='travel'>Gym</option>
-          <option className='Dropdown' value='travel'>Treak</option>
+          <option className='Dropdown' value='Gym'>Gym</option>
+          <option className='Dropdown' value='Treak'>Treak</option>
         </select>
 
         {OpenEmoji && (

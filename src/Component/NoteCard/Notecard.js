@@ -1,7 +1,11 @@
 import React from 'react';
 import './Notecard.css';
 
-// shopping, work, personal, study, travel, gym, trek
+// Function to convert first letter of a string to uppercase
+function toUpperCase(string) {
+  return string[0].toUpperCase() + string.slice(1);
+}
+
 function NoteCategory({ category }) {
   const Categories_emoji = {
     "shopping": "🛍️",
@@ -14,21 +18,21 @@ function NoteCategory({ category }) {
   };
 
   return (
-    <span className='NotecardCatrgory'>
-      {Categories_emoji[category]} {category[0].toUpperCase() }{category.slice(1)}
+    <span className={`NotecardCategory bg-${category}`}>
+      {Categories_emoji[category]} {toUpperCase(category)}
     </span>
   );
 }
 
 function Notecard({ Title, Description, Category, Emoji }) {
   return (
-    <div className='NotecardContainer'> {/* Fixed typo */}
+    <div className='NotecardContainer'>
       <div className='Notecard'>
         <h1 className='Notecard_emoji'>{Emoji}</h1>
         <div className='NotecardDis'>
           <h2 className='NotecardTitle'>{Title}</h2>
           <p className='NotecardDescription'>{Description}</p> {/* Fixed typo */}
-          <NoteCategory category={Category} /> {/* Fixed prop mismatch */}
+          <NoteCategory category={Category} /> {/* Passed the correct prop */}
         </div>
       </div>
     </div>
