@@ -11,11 +11,14 @@
     font-weight: 400;
     width: 70%;
     justify-content: start;
+    position: relative;
 }
-.NotecardConatiner{
+.NotecardContainer{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    
 
 }
 .Notecard_emoji
@@ -30,7 +33,7 @@
 .NotecardDis{
     margin: 0px;
     padding: 2px;
-
+   
 }
 .Notecardtitle
 {
@@ -42,9 +45,19 @@
 .NotecardCatrgory
 {
     margin: 0px;
-    font-size: 25px;
+    font-size: 22px;
+    /* font-weight: 00; */
+    color: rgb(46, 46, 46);
     padding: 2px;
-    font-weight:400;
+    font-weight:600;
+    position: absolute;
+    top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    right: 10px;
+    min-width: 70px;
+    background-color:rgb(127, 221, 187);
+    text-align: center;
 
 }
 .notcardDiscription

@@ -3,6 +3,8 @@ import './show.css';
 import HomeBtn from './../../Component/Home/HomeBtn';
 import Notecard from '../../Component/NoteCard/Notecard';
 
+
+
 function Show() {
   const [Notes, setNotes] = useState([]);
 
