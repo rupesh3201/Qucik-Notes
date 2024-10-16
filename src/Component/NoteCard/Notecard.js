@@ -26,6 +26,7 @@ function NoteCategory({ category }) {
 
 function Notecard({ Title, Description, Category, Emoji }) {
   return (
+    <div className='Notes_parent_continer'>
     <div className='NotecardContainer'>
       <div className='Notecard'>
         <h1 className='Notecard_emoji'>{Emoji}</h1>
@@ -35,6 +36,7 @@ function Notecard({ Title, Description, Category, Emoji }) {
           <NoteCategory category={Category} /> {/* Passed the correct prop */}
         </div>
       </div>
+    </div>
     </div>
   );
 }
