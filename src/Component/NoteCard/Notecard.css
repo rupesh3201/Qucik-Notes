@@ -57,7 +57,7 @@
     border-radius: 10px;
     right: 10px;
     min-width: 70px;
-    background-color:rgb(127, 221, 187);
+    background-color:rgb(218, 212, 52);
     text-align: center;
 
 }
@@ -71,8 +71,20 @@
     background-color: rgba(54, 114, 218, 0.925);
     color: whitesmoke;
 }
-.bg-travel{
+.bg-personal{
     background-color: rgba(0, 0, 0, 0.925);
+    color: black;
+}
+.bg-treak{
+    background-color: rgba(106, 212, 79, 0.925);
+    color: black;
+}
+.bg-shopping{
+    background-color: rgba(99, 228, 224, 0.925);
+    color: black;
+}
+.bg-gym{
+    background-color: rgba(209, 71, 177, 0.925);
     color: black;
 }
 .bg-travel{
