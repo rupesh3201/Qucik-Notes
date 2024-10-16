@@ -1,10 +1,17 @@
 import React from 'react';
 import './Notecard.css';
 import Deleteicon from '../../Assets/trash.png'
+import { json } from 'react-router-dom';
 
 // Function to convert first letter of a string to uppercase
 function toUpperCase(string) {
   return string[0].toUpperCase() + string.slice(1);
+}
+function Delete_note(index)
+{
+  const SavedNotes=JSON.parse(localStorage.getItem("notes"))||[];
+  SavedNotes.splice(index,1)
+  localStorage.setItem("notes",JSON.stringify(SavedNotes));
 }
 
 function NoteCategory({ category  }) {
@@ -36,7 +43,7 @@ function Notecard({ Title, Description, Category, Emoji }) {
           <p className='NotecardDescription'>{Description}</p> {/* Fixed typo */}
           <NoteCategory category={Category} /> {/* Passed the correct prop */}
         </div>
-        <img src={Deleteicon} className='notecardactionbtn'></img>
+        <img src={Deleteicon} className='notecardactionbtn' onClick={()=>{Delete_note(index)}}/>
       </div>
     </div>
     </div>
