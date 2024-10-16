@@ -1,28 +1,29 @@
 import React from 'react';
 import './Notecard.css';
-import Deleteicon from '../../Assets/trash.png'
-import { json } from 'react-router-dom';
+import Deleteicon from '../../Assets/trash.png';
+import toast, { Toaster } from 'react-hot-toast';
 
-// Function to convert first letter of a string to uppercase
+// Function to convert the first letter of a string to uppercase
 function toUpperCase(string) {
   return string[0].toUpperCase() + string.slice(1);
 }
-function Delete_note(index)
-{
-  const SavedNotes=JSON.parse(localStorage.getItem("notes"))||[];
-  SavedNotes.splice(index,1)
-  localStorage.setItem("notes",JSON.stringify(SavedNotes));
+
+function Delete_note(index) {
+  const SavedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+  SavedNotes.splice(index, 1);
+  localStorage.setItem('notes', JSON.stringify(SavedNotes));
+  window.location.reload(); // Consider using a state update instead of reloading the window
 }
 
-function NoteCategory({ category  }) {
+function NoteCategory({ category }) {
   const Categories_emoji = {
-    "shopping": "🛍️",
-    "work": "💼",
-    "personal": "👤",
-    "study": "👩🏻‍💻",
-    "travel": "✈️",
-    "gym": "🏋🏻‍♀️",
-    "trek": "⛰️",  // Changed "Treak" to "trek" for consistency
+    shopping: '🛍️',
+    work: '💼',
+    personal: '👤',
+    study: '👩🏻‍💻',
+    travel: '✈️',
+    gym: '🏋🏻‍♀️',
+    trek: '⛰️', // Changed "Treak" to "trek" for consistency
   };
 
   return (
@@ -32,20 +33,30 @@ function NoteCategory({ category  }) {
   );
 }
 
-function Notecard({ Title, Description, Category, Emoji }) {
+function Notecard({ Title, Description, Category, Emoji, index }) {
   return (
     <div className='Notes_parent_continer'>
-    <div className='NotecardContainer'>
-      <div className='Notecard'>
-        <h1 className='Notecard_emoji'>{Emoji}</h1>
-        <div className='NotecardDis'>
-          <h2 className='NotecardTitle'>{Title}</h2>
-          <p className='NotecardDescription'>{Description}</p> {/* Fixed typo */}
-          <NoteCategory category={Category} /> {/* Passed the correct prop */}
+      <div className='NotecardContainer'>
+        <div className='Notecard'>
+          <h1 className='Notecard_emoji'>{Emoji}</h1>
+          <div className='NotecardDis'>
+            <h2 className='NotecardTitle'>{Title}</h2>
+            <p className='NotecardDescription'>{Description}</p>
+            <NoteCategory category={Category} />
+          </div>
+          <img
+            src={Deleteicon}
+            className='notecardactionbtn'
+            onClick={() => {
+              Delete_note(index);
+              toast.success("Note Deleted Successfully")
+            }}
+            alt="Delete"
+
+          />
+          <Toaster/>
         </div>
-        <img src={Deleteicon} className='notecardactionbtn' onClick={()=>{Delete_note(index)}}/>
       </div>
-    </div>
     </div>
   );
 }
