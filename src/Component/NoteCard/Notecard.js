@@ -36,6 +36,7 @@ function Notecard({ Title, Description, Category, Emoji }) {
           <p className='NotecardDescription'>{Description}</p> {/* Fixed typo */}
           <NoteCategory category={Category} /> {/* Passed the correct prop */}
         </div>
+        <img src={Deleteicon} className='notecardactionbtn'></img>
       </div>
     </div>
     </div>
