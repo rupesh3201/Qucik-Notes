@@ -1,5 +1,6 @@
 import React from 'react';
 import './Notecard.css';
+import Deleteicon from '../../Assets/trash.png'
 
 // Function to convert first letter of a string to uppercase
 function toUpperCase(string) {
