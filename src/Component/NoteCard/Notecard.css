@@ -91,6 +91,21 @@
     background-color: rgba(44, 187, 103, 0.925);
     /* color: whitesmoke; */
 }
+
+/* delete card */
+.notecardactionbtn
+{
+    height: 40px;
+    bottom: 20px;
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+.notecardactionbtn:hover
+{
+    transform: scale(1.1);
+    transition: 0.3ms ease-in;
+}
 @media screen and (max-width:500px) {
     .Notecard{
         display: flex;
