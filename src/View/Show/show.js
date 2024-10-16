@@ -24,7 +24,7 @@ function Show() {
             const { Title, Description, Category, Emoji } = note;
             return (
               <Notecard 
-              Title={Title} Description={Description} Category= {Category} Emoji= {Emoji}
+              Index ={index} Title={Title} Description={Description} Category= {Category} Emoji= {Emoji}
 
               />
               // <div key={index} className="noteCard">

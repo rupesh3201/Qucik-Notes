@@ -7,7 +7,7 @@ function toUpperCase(string) {
   return string[0].toUpperCase() + string.slice(1);
 }
 
-function NoteCategory({ category }) {
+function NoteCategory({ category  }) {
   const Categories_emoji = {
     "shopping": "🛍️",
     "work": "💼",
